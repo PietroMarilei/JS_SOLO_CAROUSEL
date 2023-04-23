@@ -26,7 +26,7 @@ for (let i = 0; i < imgArray.length; i++) {
     img.src = `${thisImageP}`;
     sliderElement.appendChild(img)
 
-    if (counter === ) {
+    if (counter === i) {
         img.classList.remove('hidden')
 
     }
