@@ -20,6 +20,8 @@ let counter = 0
 for (let i = 0; i < imgArray.length; i++) {
     const thisImageP = imgArray[i];
 
+    function createALLImgs
+
     const img = document.createElement("img");
 
     img.classList.add('img-fluid', 'hidden')
@@ -28,15 +30,28 @@ for (let i = 0; i < imgArray.length; i++) {
 
     if (counter === i) {
         img.classList.remove('hidden')
-
     }
 
 
 }
 
-nextButton.addEventListener('click', function addCounter() {
+const allImg = document.querySelectorAll('img')
+console.log(allImg);
+/* ale seleziona tutte le img */
+
+nextButton.addEventListener('click', function () {
+
+    const currentImg = allImg[counter]
+    /* prende l'img corrente dall'array sfruttano [indice] counter*/
+    currentImg.classList.add('hidden')
+    /* aggiungo la classe hidden all'img selezionata */
+
     counter++
-    console.log(counter);
+    /* aumento il counter */
+
+    const nextImg = allImg[counter]
+
+    nextImg.classList.remove('hidden')
 
 
 }
