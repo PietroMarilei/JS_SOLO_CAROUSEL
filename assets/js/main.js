@@ -20,10 +20,9 @@ let counter = 0
 for (let i = 0; i < imgArray.length; i++) {
     const thisImageP = imgArray[i];
 
-    function createALLImgs
+
 
     const img = document.createElement("img");
-
     img.classList.add('img-fluid', 'hidden')
     img.src = `${thisImageP}`;
     sliderElement.appendChild(img)
