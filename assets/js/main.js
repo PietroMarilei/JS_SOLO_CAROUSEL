@@ -34,7 +34,7 @@ for (let i = 0; i < imgArray.length; i++) {
 
 }
 
-const allImg = document.querySelectorAll('img')
+const allImg = document.querySelectorAll('.img_slider>img')
 console.log(allImg);
 /* ale seleziona tutte le img */
 
