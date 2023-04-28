@@ -45,14 +45,20 @@ nextButton.addEventListener('click', function () {
     currentImg.classList.add('hidden')
     /* aggiungo la classe hidden all'img selezionata */
 
-    counter++
-    /* aumento il counter */
+    if (counter === imgArray.length - 1) {
+
+        counter = 0
+        // se il counter supera la lunghezza dell'array allora lo setto 0
+
+    } else {
+        counter++
+        /* aumento il counter */
+
+    }
 
     const nextImg = allImg[counter]
 
     nextImg.classList.remove('hidden')
-
-
 }
 
 )
